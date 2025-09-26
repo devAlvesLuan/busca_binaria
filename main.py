@@ -15,7 +15,6 @@ def busca_binaria(lista_numeros, alvo, primeiro_indice, ultimo_indice, contador=
     
     contador += 1
     if alvo == lista_numeros[meio_indice]:
-        print(lista_numeros)
         print(contador)
         return meio_indice
     elif alvo < lista_numeros[meio_indice]:
@@ -27,4 +26,5 @@ def busca_binaria(lista_numeros, alvo, primeiro_indice, ultimo_indice, contador=
 lista_numeros = list(map(int, input().split()))
 lista_numeros.sort()
 alvo = int(input())
+
 print(busca_binaria(lista_numeros, alvo, 0, len(lista_numeros) - 1))
